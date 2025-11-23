@@ -20,6 +20,7 @@ The plot shows a more or less stable activity in 2023 and 2024, followed by a cl
 When we inspected the commits for October 2025, we found that only two commits were made in that month, and both were strictly release-related:
 - 8ac2b916b0 | 2025-10-03 | Release: v4.57.0
 - 2ccc6cae21 | 2025-10-03 | v4.57.0 Branch (#41310)
+  
 So no regular development or bug-fixing work happened during this period.
 This suggests that early October 2025 corresponds to the release freeze and publication of v4.57.0, a phase where teams typically avoid functional changes.
 As a result, almost no defect-related commits were recorded, which explains the sharp drop in the plot.
