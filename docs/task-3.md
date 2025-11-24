@@ -17,7 +17,7 @@ A clear example from the top-10 list is the pair:
 These two files are part of the “auto” system in Transformers, which automatically selects the right model and configuration classes based on the user’s input. Because of this, they depend heavily on each other. When a new model is added or an existing one is updated, both files usually need changes. `configuration_auto.py` defines which configuration class should be used, and `modeling_auto.py` links the configuration to the right model implementation. So updating one without touching the other would break the automatic model loading mechanism. Therefore, their high local coupling is expected.
 
 ### Coupling between test files and non-test files
-![Visualization 1](../images/coupling_tests)
+![Visualization 1](../images/coupling_tests.png)
 This plot shows pairs like:
 - `src/transformers/generation/utils.py` <-> `tests/generation/test_utils.py`
 - `src/transformers/trainer.py` <-> `tests/trainer/test_trainer.py`
