@@ -18,6 +18,3 @@ University of Zurich
 
 ### Step 1: Install Necessary Packages
 ```pip install -r requirements.txt```
-
-### Setp 2: run setup.py
-```python src/setup.py```
