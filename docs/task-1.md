@@ -14,6 +14,7 @@ Each commit was parsed to extract its date, message, and modified files.
 We also built a complete month timeline from the entire commit history, so months with zero defects (like October 2025) would still appear in the plots.
 
 ## Total Number of Defects per Month
+![Visualization 1](../images/defects_per_month.png)
 The plot shows a more or less stable activity in 2023 and 2024, followed by a clear increase in early and mid-2025. However in October 2025, the number of defect-related commits drops sharply to 0.
 
 **Why does the number of defects drop sharply in October 2025?**  
@@ -32,7 +33,9 @@ The two files with the highest number of defect-related commits are:
 1. `src/transformers/modeling_utils.py`  
 2. `src/transformers/trainer.py`
 
-We plotted the monthly defect counts for both files (the plot can be found in `fss_se_assignment.ipynb`).
+We plotted the monthly defect counts for both files:
+![Visualization 1](../images/defects_per_month_modeling_utils.png)
+![Visualization 1](../images/defects_per_month-trainer.png)
 
 **In which month were the most defects introduced for each file?**
 
