@@ -27,7 +27,7 @@ This plot shows pairs like:
 - These pairings are exactly what we would expect as when a production file changes, its associated test file typically needs updates as well, which leads to strong co-change frequencies, and thus strong coupling.
 
 **Is this coupling a code smell?**
-- No, it's not a code smell. Test <-> non-test logical coupling is normal and desirable because it suggests that tests closely follow the implementation, test coverage is maintained, breaking changed trigger tets updates and tests are located in a predictable structure (that is, mirrorin the source tree).
+- No, it's not a code smell. Test <-> non-test logical coupling is normal and desirable because it suggests that tests closely follow the implementation, test coverage is maintained, breaking changes trigger tests updates and tests are located in a predictable structure (that is, mirroring the source tree).
 
 - It would only be a concern if a single test file changed alongside many unrelated modules, as it could indicate overly broad or poorly isolated tests. But the patterns seen in the plot match the expected “one module <-> one test file” relationship.
 
