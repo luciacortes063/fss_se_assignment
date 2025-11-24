@@ -23,7 +23,8 @@ This plot shows pairs like:
 - `src/transformers/trainer.py` <-> `tests/trainer/test_trainer.py`
 - `src/transformers/modeling_utils.py` <-> `tests/test_modeling_common.py`
 
-These pairings are exactly what we would expect as when a production file changes, its associated test file typically needs updates as well, which leads to strong co-change frequencies.
+**How would you explain this type of coupling?**
+- These pairings are exactly what we would expect as when a production file changes, its associated test file typically needs updates as well, which leads to strong co-change frequencies, and thus strong coupling.
 
 **Is this coupling a code smell?**
 - No, it's not a code smell. Test <-> non-test logical coupling is normal and desirable because it suggests that tests closely follow the implementation, test coverage is maintained, breaking changed trigger tets updates and tests are located in a predictable structure (that is, mirrorin the source tree).
