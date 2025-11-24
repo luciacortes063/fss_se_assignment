@@ -21,6 +21,3 @@ University of Zurich
 
 ### Setp 2: run setup.py
 ```python src/setup.py```
-
-
-

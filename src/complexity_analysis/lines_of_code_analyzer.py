@@ -3,16 +3,8 @@ from pathlib import Path
 from matplotlib import pyplot as plt
 from wordcloud import WordCloud
 
-
-def _dict_to_markdown_table(input_data: dict[str, int]) -> str:
-    header = "| Line Count | File Name |\n"
-    separator = "|-----------|------------|\n"
-    rows = ""
-
-    for key, value in input_data.items():
-        rows += f"| {value} | {key} |\n"
-
-    return header + separator + rows
+from src.paths import TRANSFORMERS_REPO_PATH, DOCS_PATH
+from src.utility.dict_to_markdown_table import dict_to_markdown_table
 
 
 def count_lines_of_python_files(directory: Path, exclude_venv: bool = True, exclude_empty_init: bool = True) -> dict[str, int]:
@@ -68,12 +60,11 @@ def create_word_cloud(input_data: dict[str, int], output_path: Path, file_name: 
 
 
 if __name__ == '__main__':
-    path_to_repo = Path("../../transformers")
     figures_output_path = Path("../../images")
-    md_output_path = Path("../../docs")
+    repo_path = Path("../../transformers")
 
-    line_counts_total = count_lines_of_python_files(path_to_repo, exclude_venv=False, exclude_empty_init=False)
-    line_counts_without_venv_and_empty_init_files = count_lines_of_python_files(path_to_repo)
+    line_counts_total = count_lines_of_python_files(repo_path, exclude_venv=False, exclude_empty_init=False)
+    line_counts_without_venv_and_empty_init_files = count_lines_of_python_files(TRANSFORMERS_REPO_PATH)
     line_counts_test_module = {}
     line_counts_src_module = {}
 
@@ -84,8 +75,8 @@ if __name__ == '__main__':
             line_counts_src_module[key.replace("src/transformers/", "")] = value
 
     sorted_line_counts_total = dict(sorted(line_counts_total.items(), key=lambda item: item[1], reverse=True))
-    markdown_table = _dict_to_markdown_table(sorted_line_counts_total)
-    (md_output_path / "line_count_table.md").open("w", encoding="utf-8").write(markdown_table)
+    markdown_table = dict_to_markdown_table(sorted_line_counts_total)
+    Path("../../docs/line_count_table.md").open("w", encoding="utf-8").write(markdown_table)
 
     create_bar_chart(line_counts_src_module, figures_output_path, "line_counts-src_module")
     create_bar_chart(line_counts_test_module, figures_output_path, "line_counts-tests_module")

@@ -1,4 +1,4 @@
-| Line Count | File Name |
+| Count | File Name |
 |-----------|------------|
 | 6172 | tests/trainer/test_trainer.py |
 | 5333 | src/transformers/trainer.py |
@@ -16,7 +16,7 @@
 | 3974 | src/transformers/generation/utils.py |
 | 3534 | tests/models/whisper/test_modeling_whisper.py |
 | 3396 | tests/utils/test_modeling_utils.py |
-| 3343 | src/transformers/generation/logits_process.py |
+| 3341 | src/transformers/generation/logits_process.py |
 | 3283 | src/transformers/models/perceiver/modeling_perceiver.py |
 | 3206 | src/transformers/models/oneformer/modeling_oneformer.py |
 | 3117 | src/transformers/models/edgetam_video/modeling_edgetam_video.py |
@@ -277,9 +277,9 @@
 | 1192 | src/transformers/models/oneformer/convert_to_hf_oneformer.py |
 | 1191 | src/transformers/models/idefics2/modeling_idefics2.py |
 | 1190 | src/transformers/models/layoutxlm/tokenization_layoutxlm.py |
-| 1188 | src/transformers/generation/continuous_batching/continuous_api.py |
 | 1186 | utils/tests_fetcher.py |
 | 1186 | src/transformers/models/deberta/modeling_deberta.py |
+| 1183 | src/transformers/generation/continuous_batching/continuous_api.py |
 | 1181 | src/transformers/models/ibert/modeling_ibert.py |
 | 1178 | src/transformers/models/dpt/modeling_dpt.py |
 | 1173 | src/transformers/models/chinese_clip/modeling_chinese_clip.py |
@@ -314,7 +314,7 @@
 | 1092 | src/transformers/models/roc_bert/tokenization_roc_bert.py |
 | 1091 | tests/models/tapas/test_modeling_tapas.py |
 | 1090 | tests/models/gemma3n/test_modeling_gemma3n.py |
-| 1090 | src/transformers/integrations/executorch.py |
+| 1089 | src/transformers/integrations/executorch.py |
 | 1088 | tests/models/seamless_m4t_v2/test_modeling_seamless_m4t_v2.py |
 | 1077 | src/transformers/models/sew/modeling_sew.py |
 | 1072 | src/transformers/pipelines/__init__.py |
@@ -481,8 +481,8 @@
 | 804 | src/transformers/models/modernbert_decoder/modular_modernbert_decoder.py |
 | 803 | tests/models/bigbird_pegasus/test_modeling_bigbird_pegasus.py |
 | 800 | examples/pytorch/translation/run_translation_no_trainer.py |
+| 799 | src/transformers/core_model_loading.py |
 | 798 | tests/models/oneformer/test_processing_oneformer.py |
-| 798 | src/transformers/core_model_loading.py |
 | 795 | examples/pytorch/object-detection/run_object_detection_no_trainer.py |
 | 795 | src/transformers/models/florence2/processing_florence2.py |
 | 794 | examples/pytorch/3d_parallel_checks.py |
@@ -563,9 +563,9 @@
 | 741 | src/transformers/models/bert_generation/modeling_bert_generation.py |
 | 740 | tests/models/mbart/test_modeling_mbart.py |
 | 738 | src/transformers/models/qwen3_moe/modeling_qwen3_moe.py |
-| 738 | src/transformers/data/processors/squad.py |
 | 737 | tests/models/clip/test_modeling_clip.py |
 | 737 | tests/models/deformable_detr/test_image_processing_deformable_detr.py |
+| 737 | src/transformers/data/processors/squad.py |
 | 736 | tests/models/mllama/test_modeling_mllama.py |
 | 736 | src/transformers/models/longcat_flash/modeling_longcat_flash.py |
 | 734 | tests/models/xlnet/test_modeling_xlnet.py |
@@ -649,10 +649,10 @@
 | 659 | src/transformers/models/internvl/modular_internvl.py |
 | 658 | tests/models/seamless_m4t/test_tokenization_seamless_m4t.py |
 | 658 | examples/pytorch/multiple-choice/run_swag_no_trainer.py |
-| 658 | src/transformers/integrations/higgs.py |
-| 658 | src/transformers/generation/continuous_batching/cache.py |
 | 657 | tests/models/bamba/test_modeling_bamba.py |
 | 657 | tests/models/x_clip/test_modeling_x_clip.py |
+| 657 | src/transformers/integrations/higgs.py |
+| 657 | src/transformers/generation/continuous_batching/cache.py |
 | 656 | src/transformers/models/minimax/modular_minimax.py |
 | 654 | examples/pytorch/image-classification/run_image_classification_no_trainer.py |
 | 653 | tests/models/speech_to_text/test_modeling_speech_to_text.py |
@@ -731,10 +731,10 @@
 | 600 | tests/models/conditional_detr/test_modeling_conditional_detr.py |
 | 600 | src/transformers/models/vaultgemma/modeling_vaultgemma.py |
 | 600 | src/transformers/models/hgnet_v2/modular_hgnet_v2.py |
-| 600 | src/transformers/data/processors/glue.py |
 | 599 | tests/models/umt5/test_modeling_umt5.py |
 | 599 | tests/models/csm/test_modeling_csm.py |
 | 599 | src/transformers/models/audioflamingo3/modeling_audioflamingo3.py |
+| 599 | src/transformers/data/processors/glue.py |
 | 598 | tests/models/roformer/test_modeling_roformer.py |
 | 597 | tests/models/kosmos2/test_processing_kosmos2.py |
 | 597 | src/transformers/models/data2vec/modular_data2vec_text.py |
@@ -794,7 +794,7 @@
 | 558 | tests/models/mpt/test_modeling_mpt.py |
 | 558 | tests/models/gpt_neo/test_modeling_gpt_neo.py |
 | 558 | tests/models/llava_onevision/test_modeling_llava_onevision.py |
-| 558 | src/transformers/loss/loss_for_object_detection.py |
+| 557 | src/transformers/loss/loss_for_object_detection.py |
 | 556 | tests/models/falcon_mamba/test_modeling_falcon_mamba.py |
 | 556 | tests/models/blenderbot_small/test_modeling_blenderbot_small.py |
 | 556 | src/transformers/models/mlcd/modeling_mlcd.py |
@@ -824,6 +824,7 @@
 | 542 | src/transformers/models/cohere2/modeling_cohere2.py |
 | 542 | src/transformers/models/glm/modeling_glm.py |
 | 542 | src/transformers/models/funnel/tokenization_funnel.py |
+| 541 | tests/models/auto/test_tokenization_auto.py |
 | 541 | tests/models/layoutlmv2/test_modeling_layoutlmv2.py |
 | 541 | tests/models/align/test_modeling_align.py |
 | 541 | src/transformers/models/got_ocr2/image_processing_got_ocr2.py |
@@ -865,7 +866,6 @@
 | 525 | src/transformers/models/vit_msn/modeling_vit_msn.py |
 | 525 | src/transformers/models/helium/modeling_helium.py |
 | 524 | tests/generation/test_continuous_batching.py |
-| 524 | tests/models/auto/test_tokenization_auto.py |
 | 524 | src/transformers/models/qwen2/modeling_qwen2.py |
 | 524 | src/transformers/models/aria/image_processing_aria.py |
 | 522 | tests/models/swinv2/test_modeling_swinv2.py |
@@ -877,9 +877,9 @@
 | 521 | src/transformers/models/sam3_tracker/processing_sam3_tracker.py |
 | 520 | tests/models/funnel/test_modeling_funnel.py |
 | 520 | examples/pytorch/object-detection/run_object_detection.py |
-| 520 | src/transformers/generation/stopping_criteria.py |
 | 519 | tests/models/gemma/test_tokenization_gemma.py |
 | 519 | examples/pytorch/contrastive-image-text/run_clip.py |
+| 519 | src/transformers/generation/stopping_criteria.py |
 | 519 | src/transformers/models/olmo2/modeling_olmo2.py |
 | 519 | src/transformers/models/clip/tokenization_clip.py |
 | 519 | src/transformers/models/voxtral/modeling_voxtral.py |
@@ -905,7 +905,6 @@
 | 510 | src/transformers/pipelines/image_text_to_text.py |
 | 510 | src/transformers/models/smolvlm/image_processing_smolvlm_fast.py |
 | 510 | src/transformers/models/beit/image_processing_beit.py |
-| 507 | benchmark_v2/framework/benchmark_runner.py |
 | 507 | tests/models/edgetam_video/test_modeling_edgetam_video.py |
 | 507 | tests/sagemaker/scripts/pytorch/run_glue_model_parallelism.py |
 | 507 | src/transformers/models/lfm2/modular_lfm2.py |
@@ -1001,6 +1000,7 @@
 | 468 | tests/models/mamba2/test_modeling_mamba2.py |
 | 468 | src/transformers/loss/loss_rt_detr.py |
 | 467 | tests/models/lfm2_vl/test_processing_lfm2_vl.py |
+| 466 | benchmark_v2/framework/benchmark_runner.py |
 | 466 | tests/models/deit/test_modeling_deit.py |
 | 466 | tests/models/fuyu/test_image_processing_fuyu.py |
 | 466 | tests/models/glm4v_moe/test_modeling_glm4v_moe.py |
@@ -1413,19 +1413,19 @@
 | 334 | src/transformers/models/megatron_bert/convert_megatron_bert_checkpoint.py |
 | 334 | src/transformers/models/llava_onevision/image_processing_llava_onevision_fast.py |
 | 333 | tests/models/mbart/test_tokenization_mbart.py |
-| 333 | src/transformers/quantizers/auto.py |
 | 333 | src/transformers/models/olmo2/modular_olmo2.py |
 | 333 | src/transformers/models/glm4v/configuration_glm4v.py |
 | 332 | tests/models/univnet/test_modeling_univnet.py |
 | 332 | tests/models/vit/test_modeling_vit.py |
+| 332 | src/transformers/quantizers/auto.py |
 | 332 | src/transformers/models/convnext/image_processing_convnext.py |
 | 332 | src/transformers/models/mobilevitv2/convert_mlcvnets_to_pytorch.py |
-| 332 | src/transformers/data/processors/utils.py |
 | 331 | utils/custom_init_isort.py |
 | 331 | tests/utils/test_configuration_utils.py |
 | 331 | tests/models/vitpose/test_modeling_vitpose.py |
 | 331 | src/transformers/models/biogpt/tokenization_biogpt.py |
 | 331 | src/transformers/models/esm/openfold_utils/protein.py |
+| 331 | src/transformers/data/processors/utils.py |
 | 330 | src/transformers/models/sam2_video/convert_sam2_video_to_hf.py |
 | 329 | src/transformers/models/bark/generation_configuration_bark.py |
 | 329 | src/transformers/models/granitemoe/modular_granitemoe.py |
@@ -1434,11 +1434,11 @@
 | 328 | src/transformers/models/edgetam/configuration_edgetam.py |
 | 328 | src/transformers/models/qwen2_5_vl/configuration_qwen2_5_vl.py |
 | 328 | src/transformers/models/phi/modular_phi.py |
-| 327 | src/transformers/integrations/hub_kernels.py |
 | 327 | src/transformers/models/rt_detr/modular_rt_detr.py |
 | 327 | src/transformers/models/unispeech_sat/configuration_unispeech_sat.py |
 | 327 | src/transformers/models/nllb/tokenization_nllb_fast.py |
 | 327 | src/transformers/models/imagegpt/image_processing_imagegpt.py |
+| 326 | src/transformers/integrations/hub_kernels.py |
 | 326 | src/transformers/models/videomae/convert_videomae_to_pytorch.py |
 | 326 | src/transformers/models/align/configuration_align.py |
 | 326 | src/transformers/models/llava_onevision/processing_llava_onevision.py |
@@ -1929,7 +1929,6 @@
 | 226 | src/transformers/time_series_utils.py |
 | 226 | src/transformers/models/udop/convert_udop_to_hf.py |
 | 226 | src/transformers/models/pvt/convert_pvt_to_pytorch.py |
-| 226 | src/transformers/data/datasets/squad.py |
 | 225 | tests/models/flava/test_processing_flava.py |
 | 225 | tests/quantization/bitnet_integration/test_bitnet.py |
 | 225 | src/transformers/utils/kernel_config.py |
@@ -1937,6 +1936,7 @@
 | 225 | src/transformers/models/musicgen/configuration_musicgen.py |
 | 225 | src/transformers/models/internvl/configuration_internvl.py |
 | 225 | src/transformers/models/fsmt/configuration_fsmt.py |
+| 225 | src/transformers/data/datasets/squad.py |
 | 224 | tests/pipelines/test_pipelines_text_classification.py |
 | 224 | tests/utils/test_image_processing_utils.py |
 | 224 | tests/fsdp/test_context_parallel.py |
@@ -1986,11 +1986,11 @@
 | 216 | src/transformers/models/upernet/convert_convnext_upernet_to_pytorch.py |
 | 216 | src/transformers/models/flaubert/configuration_flaubert.py |
 | 216 | src/transformers/models/git/configuration_git.py |
-| 216 | src/transformers/generation/continuous_batching/requests.py |
 | 215 | tests/models/dac/test_feature_extraction_dac.py |
 | 215 | tests/models/qwen3_moe/test_modeling_qwen3_moe.py |
 | 215 | src/transformers/models/pegasus/tokenization_pegasus_fast.py |
 | 215 | src/transformers/models/florence2/configuration_florence2.py |
+| 215 | src/transformers/generation/continuous_batching/requests.py |
 | 214 | tests/deepspeed/test_alst_ulysses_sp.py |
 | 214 | src/transformers/models/poolformer/convert_poolformer_original_to_pytorch.py |
 | 214 | src/transformers/models/mgp_str/processing_mgp_str.py |
@@ -2272,9 +2272,9 @@
 | 167 | tests/models/sam_hq/test_processing_samhq.py |
 | 167 | tests/models/musicgen_melody/test_processing_musicgen_melody.py |
 | 167 | tests/models/chinese_clip/test_image_processing_chinese_clip.py |
-| 167 | src/transformers/loss/loss_utils.py |
 | 166 | tests/models/gemma3n/test_processing_gemma3n.py |
 | 166 | tests/models/wav2vec2_bert/test_processing_wav2vec2_bert.py |
+| 166 | src/transformers/loss/loss_utils.py |
 | 166 | src/transformers/quantizers/quantizer_eetq.py |
 | 166 | src/transformers/models/diffllama/configuration_diffllama.py |
 | 166 | src/transformers/models/superpoint/image_processing_superpoint_fast.py |
@@ -2296,6 +2296,7 @@
 | 164 | src/transformers/models/qwen3/modular_qwen3.py |
 | 164 | src/transformers/models/plbart/configuration_plbart.py |
 | 164 | src/transformers/models/glm/configuration_glm.py |
+| 163 | benchmark_v2/framework/data_classes.py |
 | 163 | tests/models/gemma3/test_processing_gemma3.py |
 | 163 | src/transformers/models/electra/convert_electra_original_tf_checkpoint_to_pytorch.py |
 | 163 | src/transformers/models/mobilebert/configuration_mobilebert.py |
@@ -2311,7 +2312,6 @@
 | 161 | src/transformers/models/marian/configuration_marian.py |
 | 161 | src/transformers/models/blenderbot/configuration_blenderbot.py |
 | 160 | utils/download_glue_data.py |
-| 160 | benchmark_v2/framework/data_classes.py |
 | 160 | tests/models/videomae/test_video_processing_videomae.py |
 | 160 | src/transformers/models/udop/configuration_udop.py |
 | 160 | src/transformers/models/mamba/configuration_mamba.py |
@@ -2329,7 +2329,6 @@
 | 158 | tests/models/instructblip/test_processing_instructblip.py |
 | 158 | src/transformers/models/prompt_depth_anything/configuration_prompt_depth_anything.py |
 | 158 | src/transformers/models/granitemoeshared/modular_granitemoeshared.py |
-| 158 | src/transformers/data/datasets/glue.py |
 | 157 | examples/modular-transformers/configuration_new_model.py |
 | 157 | examples/pytorch/question-answering/trainer_seq2seq_qa.py |
 | 157 | src/transformers/models/swin/configuration_swin.py |
@@ -2341,6 +2340,7 @@
 | 157 | src/transformers/models/funnel/convert_funnel_original_tf_checkpoint_to_pytorch.py |
 | 157 | src/transformers/models/xmod/configuration_xmod.py |
 | 157 | src/transformers/models/dinov2/configuration_dinov2.py |
+| 157 | src/transformers/data/datasets/glue.py |
 | 156 | utils/patch_helper.py |
 | 156 | tests/models/blip/test_processing_blip.py |
 | 156 | src/transformers/models/donut/processing_donut.py |
@@ -2540,6 +2540,7 @@
 | 129 | src/transformers/models/mobilenet_v2/configuration_mobilenet_v2.py |
 | 129 | src/transformers/models/roberta_prelayernorm/configuration_roberta_prelayernorm.py |
 | 129 | src/transformers/models/persimmon/convert_persimmon_weights_to_hf.py |
+| 128 | benchmark_v2/run_benchmarks.py |
 | 128 | tests/models/llama4/test_image_processing_llama4.py |
 | 128 | tests/models/bit/test_image_processing_bit.py |
 | 128 | tests/models/clip/test_image_processing_clip.py |
@@ -2651,7 +2652,6 @@
 | 114 | src/transformers/models/resnet/configuration_resnet.py |
 | 114 | src/transformers/models/blenderbot/convert_blenderbot_original_pytorch_checkpoint_to_pytorch.py |
 | 114 | src/transformers/models/dac/configuration_dac.py |
-| 113 | benchmark_v2/run_benchmarks.py |
 | 113 | tests/models/markuplm/test_feature_extraction_markuplm.py |
 | 113 | tests/models/esm/test_tokenization_esm.py |
 | 113 | tests/models/clap/test_processing_clap.py |
@@ -2684,7 +2684,6 @@
 | 108 | src/transformers/models/yoso/convert_yoso_pytorch_to_pytorch.py |
 | 108 | src/transformers/models/speecht5/convert_hifigan.py |
 | 107 | tests/trainer/test_trainer_distributed_loss.py |
-| 106 | src/transformers/integrations/sdpa_attention.py |
 | 106 | src/transformers/models/glm46v/configuration_glm46v.py |
 | 106 | src/transformers/models/sam2_video/video_processing_sam2_video.py |
 | 105 | tests/models/emu3/test_processing_emu3.py |
@@ -2692,6 +2691,7 @@
 | 105 | src/transformers/models/esm/openfold_utils/loss.py |
 | 104 | tests/models/got_ocr2/test_processing_got_ocr2.py |
 | 104 | tests/models/internvl/test_video_processing_internvl.py |
+| 104 | src/transformers/integrations/sdpa_attention.py |
 | 104 | src/transformers/models/mgp_str/tokenization_mgp_str.py |
 | 104 | src/transformers/models/musicgen/processing_musicgen.py |
 | 103 | src/transformers/integrations/mistral.py |
@@ -2699,7 +2699,6 @@
 | 102 | utils/check_config_docstrings.py |
 | 102 | tests/utils/test_file_utils.py |
 | 102 | tests/models/timm_wrapper/test_image_processing_timm_wrapper.py |
-| 102 | src/transformers/integrations/flash_paged.py |
 | 102 | src/transformers/models/flava/convert_dalle_to_flava_codebook.py |
 | 102 | src/transformers/models/fastspeech2_conformer/convert_model_with_hifigan.py |
 | 102 | src/transformers/models/colpali/configuration_colpali.py |
@@ -2711,6 +2710,7 @@
 | 100 | tests/models/rt_detr/test_modeling_rt_detr_resnet.py |
 | 100 | tests/models/lightglue/test_image_processing_lightglue.py |
 | 100 | src/transformers/integrations/aqlm.py |
+| 100 | src/transformers/integrations/flash_paged.py |
 | 99 | tests/sagemaker/test_multi_node_data_parallel.py |
 | 99 | tests/models/dots1/test_modeling_dots1.py |
 | 99 | tests/models/biogpt/test_tokenization_biogpt.py |
@@ -2737,7 +2737,6 @@
 | 94 | src/transformers/models/regnet/configuration_regnet.py |
 | 93 | utils/check_pipeline_typing.py |
 | 93 | tests/trainer/test_trainer_distributed_worker_seed.py |
-| 93 | src/transformers/integrations/flash_attention.py |
 | 93 | src/transformers/models/levit/image_processing_levit_fast.py |
 | 92 | tests/pipelines/test_pipelines_zero_shot_audio_classification.py |
 | 92 | tests/utils/import_structures/import_structure_raw_register_with_versions.py |
@@ -2748,6 +2747,7 @@
 | 91 | utils/compare_test_runs.py |
 | 91 | tests/pipelines/test_pipelines_image_to_image.py |
 | 91 | examples/modular-transformers/modular_new_task_model.py |
+| 91 | src/transformers/integrations/flash_attention.py |
 | 91 | src/transformers/models/lfm2_vl/configuration_lfm2_vl.py |
 | 90 | tests/models/roformer/test_tokenization_roformer.py |
 | 90 | tests/models/blenderbot_small/test_tokenization_blenderbot_small.py |
@@ -2791,7 +2791,6 @@
 | 77 | tests/utils/import_structures/import_structure_register_with_duplicates.py |
 | 77 | tests/utils/import_structures/import_structure_register_with_comments.py |
 | 77 | tests/models/layoutlm/test_tokenization_layoutlm.py |
-| 77 | src/transformers/integrations/eager_paged.py |
 | 77 | src/transformers/models/kosmos2/convert_kosmos2_original_pytorch_checkpoint_to_pytorch.py |
 | 77 | src/transformers/models/xlm/convert_xlm_original_pytorch_checkpoint_to_pytorch.py |
 | 77 | src/transformers/models/whisper/processing_whisper.py |
@@ -2801,6 +2800,7 @@
 | 75 | tests/models/helium/test_modeling_helium.py |
 | 75 | tests/models/flaubert/test_tokenization_flaubert.py |
 | 75 | tests/repo_utils/modular/test_conversion_order.py |
+| 75 | src/transformers/integrations/eager_paged.py |
 | 75 | src/transformers/models/tvp/processing_tvp.py |
 | 74 | tests/utils/test_activations.py |
 | 74 | src/transformers/models/falcon/convert_custom_code_checkpoint.py |
@@ -2815,7 +2815,6 @@
 | 68 | tests/models/phobert/test_tokenization_phobert.py |
 | 68 | tests/models/bartpho/test_tokenization_bartpho.py |
 | 68 | examples/modular-transformers/modular_multimodal2.py |
-| 68 | src/transformers/integrations/sdpa_paged.py |
 | 68 | src/transformers/models/hubert/convert_hubert_original_s3prl_checkpoint_to_pytorch.py |
 | 68 | src/transformers/models/align/processing_align.py |
 | 68 | src/transformers/models/xglm/convert_xglm_original_ckpt_to_trfms.py |
@@ -2823,6 +2822,7 @@
 | 67 | tests/models/hunyuan_v1_dense/test_modeling_hunyuan_v1_dense.py |
 | 66 | tests/models/bertweet/test_tokenization_bertweet.py |
 | 66 | examples/modular-transformers/modeling_add_function.py |
+| 66 | src/transformers/integrations/sdpa_paged.py |
 | 66 | src/transformers/models/roformer/tokenization_utils.py |
 | 66 | src/transformers/models/openai/tokenization_openai_fast.py |
 | 63 | tests/models/donut/test_processing_donut.py |
